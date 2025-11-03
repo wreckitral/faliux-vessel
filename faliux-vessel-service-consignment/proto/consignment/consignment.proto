@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package consignment;
 
-option go_package = "github.com/wreckitral/faliux-vessel-service-consignment/proto/consignment";
+option go_package = "github.com/wreckitral/faliux-vessel/faliux-vessel-service-consignment/proto/consignment;consignment";
 
 service ShippingService {
   rpc CreateConsignment(Consignment) returns (Response) {}
