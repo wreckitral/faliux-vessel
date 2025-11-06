@@ -2,10 +2,11 @@ syntax = "proto3";
 
 package consignment;
 
-option go_package = "github.com/wreckitral/faliux-vessel/faliux-vessel-service-consignment/proto/consignment;consignment";
+option go_package = "github.com/wreckitral/faliux-vessel/faliux-vessel-service-consignment/proto/consignment";
 
 service ShippingService {
   rpc CreateConsignment(Consignment) returns (Response) {}
+  rpc GetConsignments(GetRequest) returns (Response) {}
 }
 
 message Consignment {
@@ -23,7 +24,10 @@ message Container {
   string user_id = 4;
 }
 
+message GetRequest {}
+
 message Response {
   bool created = 1;
   Consignment consignment = 2;
+  repeated Consignment consignments = 3;
 }
