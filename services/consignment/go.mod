@@ -1,10 +1,11 @@
-module github.com/wreckitral/faliux-vessel/faliux-vessel-cli-consignment
+module github.com/wreckitral/faliux-vessel/services/consignment
 
 go 1.25.3
 
 require (
-	github.com/wreckitral/faliux-vessel/faliux-vessel-service-consignment v0.0.0-20250330163808-fd8eb67697cb
+	go-micro.dev/v5 v5.11.0
 	google.golang.org/grpc v1.76.0
+	google.golang.org/protobuf v1.36.10
 )
 
 require (
@@ -50,7 +51,6 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/urfave/cli/v2 v2.27.6 // indirect
 	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
-	go-micro.dev/v5 v5.11.0 // indirect
 	go.etcd.io/bbolt v1.4.0 // indirect
 	go.etcd.io/etcd/api/v3 v3.5.21 // indirect
 	go.etcd.io/etcd/client/pkg/v3 v3.5.21 // indirect
@@ -67,7 +67,4 @@ require (
 	golang.org/x/tools v0.34.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20250804133106-a7a43d27e69b // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250804133106-a7a43d27e69b // indirect
-	google.golang.org/protobuf v1.36.10 // indirect
 )
-
-replace github.com/wreckitral/faliux-vessel/faliux-vessel-service-consignment => ../faliux-vessel-service-consignment

@@ -6,7 +6,8 @@ import (
 	"log"
 	"os"
 
-	pb "github.com/wreckitral/faliux-vessel/faliux-vessel-service-consignment/proto/consignment"
+	pb "github.com/wreckitral/faliux-vessel/clients/cli-consignment/generated/consignment/v1"
+
 	"go-micro.dev/v5"
 )
 

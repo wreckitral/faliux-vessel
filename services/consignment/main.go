@@ -4,12 +4,8 @@ import (
 	"context"
 	"log"
 
-	pb "github.com/wreckitral/faliux-vessel/faliux-vessel-service-consignment/proto/consignment"
+	pb "github.com/wreckitral/faliux-vessel/services/consignment/generated/consignment/v1"
 	"go-micro.dev/v5"
-)
-
-const (
-	port = ":22120"
 )
 
 type repository interface {
